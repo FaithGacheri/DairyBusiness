@@ -1,12 +1,9 @@
 body{
    /* background-color: red; */
-  
+  float: none;
+  justify-content: center;
   
  } 
  
- .btn{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-decoration: none;
- }
+ 
+
