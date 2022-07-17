@@ -9,40 +9,34 @@
 </head>
 <body>
    
- <h3>   Below is your indivdual shed output daily and income overtime</h3>
- <div class="btn">
-  <button onclick="shedOutput ()">
-  
-    <p>Sheds</p>
-  </button>
-  
-  <button onclick="overTime ()">
-    <p>Income overtime</p>
-  </button>
-
-  <button onclick="monthlyIncome ()" >
-<p>monthly income</p>
-  </button>
-</div>
-
-
-<div>
+ <div>
    <div class="output" id="sheds">
 
-       
-      
+   <h4>This is production in a shed per day</h4>
+    <button onclick="shedOutput ()">
+  
+        <p>Sheds</p>
+      </button>
       
       </div>
       <p id="totalproduction">The totalproduction is 1876 litres per day</p>
 </div>
 
 <div >
+   <H4>This is income overtime</H4>
+   <button onclick="overTime ()">
+    <p>Income overtime</p>
+  </button>
     <p id="weeklyincome"></p>
     <p id="yearlyincome"></p>
+    
 </div>
 
 <div class="income" id="monthly">
-
+    <h4>This is a report of monthly income in a leap year</h4>
+    <button onclick="monthlyIncome ()" >
+        <p>monthly income</p>
+          </button>
 </div>
     <script src="./index.js"></script>
 </body>
