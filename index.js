@@ -8,7 +8,6 @@ function shedOutput (){
     });
 
     for ( let i = 0; i < sheds.length; i++){
-        output += sheds[i] + "<br>"; litres[i]
-        console.log(output)
+      let parentUI = document.
     }
 }
