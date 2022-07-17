@@ -6,7 +6,7 @@ function shedOutput (fn){
     
     for ( let i = 0; i < sheds.length; i++){
         let parentUl = document.getElementById("sheds")
-        let list = document.getElementById("li")
+        let list = document.createElement("li")
         list.innerHTML = "your production in shed number" + " " + sheds[i] + " " + "is" + " " +
         litres[i] + " " + "per day";
         parentUl.appendChild(list);
