@@ -6,7 +6,7 @@ function shedOutput (fn){
     
     for ( let i = 0; i < sheds.length; i++){
         let parentUl = document.getElementById("sheds")
-        let list = document.createElement("li");
+        let list = document.getElementById("li")
         list.innerHTML = "your production in shed number" + " " + sheds[i] + " " + "is" + " " +
         litres[i] + " " + "per day";
         parentUl.appendChild(list);
@@ -17,13 +17,12 @@ function shedOutput (fn){
 }
 
 function overTime () {
-  output = 0;
-    litres.array.forEach(element => {
-        output += element;
-        return output;
-    });
-    weekly = output * 7;
-    yearly = output * 365;
+  
+    weekly = output * 7 * 45;
+    yearly = output * 365 * 45;
+    let weeklyparagraph = document.getElementById("weeklyincome") 
+    weeklyparagraph.innerHTML = "your weekly income is"
+  
     
 }
 
