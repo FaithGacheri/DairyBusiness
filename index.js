@@ -21,8 +21,9 @@ function overTime () {
     weekly = output * 7 * 45;
     yearly = output * 365 * 45;
     let weeklyparagraph = document.getElementById("weeklyincome") 
-    weeklyparagraph.innerHTML = "your weekly income is"
-  
+    weeklyparagraph.innerHTML = "your weekly income is" + " " + weekly
+    let yearlyparagraph = document.getElementById("yearlyincome")
+    yearlyparagraph.innerHTML = "your yearly income is" + " " + yearly
     
 }
 
