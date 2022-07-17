@@ -18,14 +18,14 @@ function shedOutput (fn){
 
 function overTime () {
 
-    var weekly = output * 7;
-    var yearly = output * 365;
+    var weekly = output * 7 * 45;
+    var yearly = output * 365 * 45;
  
-    for ( let i = 0; i < litres.length; i++){
+    for ( let i = 0; i < litres.length; i ++){
         let parentUl = document.getElementById("litres")
         let list = document.createElement("li");
         list.innerHTML = "your weekly income will be" + " " + "output" + " " + "weekly";
-        list.innerHTML = "your monthly income will be" + " " + "output" + " " + "monthly";
+        list.innerHTML = "your yearly income will be" + " " + "output" + " " + "monthly";
         parentUl.appendChild(list);
 }
 
