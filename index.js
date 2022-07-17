@@ -10,6 +10,7 @@ function shedOutput (fn){
         list.innerHTML = "your production in shed number" + " " + sheds[i] + " " + "is" + " " +
         litres[i] + " " + "per day";
         parentUl.appendChild(list);
+        let totalparagraph = document.getElementById("totalproduction")
         
         output += litres[i] 
     }
@@ -31,14 +32,16 @@ function overTime () {
 
 
 function monthlyIncome () {
-    months =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    income =[2617020, 2448180, 2617020, 2532600, 2617020, 2532600, 2617020, 2617020, 2532600, 2617020, 2532600, 2617020
-    ]
+  days =[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-    for ( let i = 0; i < months.length; i++){
+    for ( let i = 0; i < days.length; i++){
         let parentUl = document.getElementById("monthly")
         let list = document.createElement("li");
-        list.innerHTML = "your income for month " + " " + months[i] + " " + "is" + " " + income[i]
+        month = i + 1;
+
+        monthlytotal = days[i] * output * 45
+        list.innerHTML = "your income for month " + " " + month  + " " + "is" + " " + monthlytotal
         parentUl.appendChild(list);
+
 } 
 }
