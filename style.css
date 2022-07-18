@@ -2,7 +2,47 @@ body{
    /* background-color: red; */
   float: none;
   justify-content: center;
+  background-image: url(./dailyfresh-serilingampally-hyderabad-milk-dairy-087gwhdecg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   
  } 
  
+ .nav{
+    background-color:black ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+}
 
+ .navbar{
+    display: flex;
+    width: 80%;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h2{
+    flex: 1;
+    color: white;
+    font-family: sans-serif;
+}
+
+.navbar ul{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2px;
+    margin: 20px;
+    /* color: white; */
+    /* background-color: yellow; */
+    
+}
+.navbar ul li{
+    list-style-type: none;
+    padding: 2px 8px;
+}
